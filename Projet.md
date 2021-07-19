@@ -14,4 +14,4 @@ La version de node n'accepte pas la version de sass. Je désintalle node sass po
 https://stackoverflow.com/questions/64625050/error-node-sass-version-5-0-0-is-incompatible-with-4-0-0
 
 
-
+# Static
