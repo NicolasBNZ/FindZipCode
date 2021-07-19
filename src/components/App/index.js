@@ -9,7 +9,7 @@ import Zip from '../Zip';
 function App() {
   return (
     <div className='app'>
-      <h1> Entrer un code postal</h1>
+      <h1> Trouver une commune avec son code postal</h1>
       <Zip />
     </div>
   );
