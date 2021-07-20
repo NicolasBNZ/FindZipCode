@@ -1,29 +1,29 @@
 import React from 'react'
-// import PropTypes from 'prop-types';
+import PropTypes from 'prop-types';
 
 import Repo from '../City/Repo';
-// import data from 'D://CODE/Code postal/findzipcode/findzipcode/src/data/departements.json'
-import data from 'D://CODE/Code postal/findzipcode/findzipcode/src/data/codepostal.json'
 
 import './city.scss';
 
 
-function City() {
+function City({ repos }) {
+    console.log('repos dans City', repos);
     return (
         <div className="cityName">
-            {data.map((repos) => (
-                <Repo key={repos.id} {...repos} />
+            {repos.map((repo) => (
+                <Repo key={repo.code} {...repo} />
             ))}
         </div>
     )
 }
 
-// City.propTypes = {
-//     data: PropTypes.arrayOf(
-//       PropTypes.shape({
-//         id: PropTypes.number.isRequired,
-//       }).isRequired,
-//     ).isRequired,
-//   };
+
+City.propTypes = {
+    repos: PropTypes.arrayOf(
+      PropTypes.shape({
+        code: PropTypes.string.isRequired,
+      }).isRequired,
+    ).isRequired,
+  };
 
 export default City

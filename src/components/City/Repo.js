@@ -1,11 +1,17 @@
 import React from 'react'
+import PropTypes from 'prop-types';
 
-function Repo({name}) {
+function Repo({ nom, codeDepartement }) {
     return (
         <div>
-            <h3>{name}</h3>
+            <h3>{nom} ({codeDepartement})</h3>
         </div>
     )
 }
+
+Repo.propTypes = {
+    nom: PropTypes.string.isRequired,
+    codeDepartement: PropTypes.string.isRequired,
+};
 
 export default Repo

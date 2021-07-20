@@ -1,20 +1,21 @@
-import React, { useRef } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 
 import './zip.scss';
 
-const Zip = ({ search, setSearch }) => {
-    // https://reactjs.org/docs/hooks-reference.html#useref
-    // we begin with an empty box
-    const refInput = useRef(null);
+const Zip = ({ search, setSearch, makeSearch }) => {
+
 
     return (
         <div className="zipcode">
-            <form>
+            <form
+                onSubmit={(event) => {
+                    event.preventDefault();
+                    makeSearch();
+                }}>
                 <label htmlFor="zipcode" className="enterZip">Entrer un code postal:</label>
                 <input
                     className="spaceZip"
-                    ref={refInput}
                     type="text"
                     placeholder="Rechercher..."
                     id="zipcode"
@@ -25,7 +26,6 @@ const Zip = ({ search, setSearch }) => {
                     }}
                 ></input>
             </form>
-
         </div>
     );
 };
@@ -35,7 +35,7 @@ const Zip = ({ search, setSearch }) => {
 Zip.propTypes = {
     search: PropTypes.string.isRequired,
     setSearch: PropTypes.func.isRequired,
-    // makeSearch: PropTypes.func.isRequired,
+    makeSearch: PropTypes.func.isRequired,
 };
 
 export default Zip;
