@@ -16,8 +16,10 @@ https://stackoverflow.com/questions/64625050/error-node-sass-version-5-0-0-is-in
 
 ## ajaxCity
 
-L'idée est de récupérer dans la base de données de l'Insee (en local, impossible de la trouver en ligne - étrange) le nom de la ville qui correspond au code postal qu'on a entré dans le state. Je vais m'inspirer de code utilisé pour une application de conversion de monnaie faite en cours.
+L'idée est de récupérer dans la base de données de l'Insee (je pensais un json local mais j'ai trouvé une API) le nom de la ville qui correspond au code postal qu'on a entré dans le state. Je vais m'inspirer de code utilisé pour une application de conversion de monnaie faite en cours.
 
 
 Solution de facilité? 
 https://developers.google.com/maps/documentation/javascript/places-autocomplete
+
+

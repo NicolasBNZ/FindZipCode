@@ -20,7 +20,6 @@ function App() {
 
 
 
-
   // Call to the zip code API
   const makeSearch = () => {
 
