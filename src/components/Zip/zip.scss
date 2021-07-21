@@ -11,10 +11,16 @@
     size: 2rem;
 }
 
+.inputZip {
+    display:flex;
+    flex-direction: column;
+}
+
 .spaceZip {
     size: 1.6rem;
     font-weight: 500;
     color: #bb5432;
+    margin-bottom: 15px;
 }
 
 

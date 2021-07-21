@@ -13,17 +13,21 @@ const Zip = ({ search, setSearch, makeSearch }) => {
                     event.preventDefault();
                     makeSearch();
                 }}>
-                <input
-                    className="spaceZip"
-                    type="text"
-                    placeholder="Entrer un code postal"
-                    id="zipcode"
-                    name="zipcode"
-                    value={search}
-                    onChange={(event) => {
-                        setSearch(event.target.value);
-                    }}
-                ></input>
+                <div className="inputZip">
+                    <input
+                        className="spaceZip"
+                        type="text"
+                        placeholder="Entrer un code postal"
+                        id="zipcode"
+                        name="zipcode"
+                        value={search}
+                        onChange={(event) => {
+                            setSearch(event.target.value);
+                        }}
+                    ></input>
+                    <input type="submit" value="Valider"></input>
+                </div>
+
             </form>
         </div>
     );

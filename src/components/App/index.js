@@ -51,7 +51,7 @@ function App() {
 
   return (
     <div className='app'>
-      <h1 className="appTitle"> Trouver une commune avec son code postal</h1>
+      <h1 className="appTitle"> Trouve une commune avec son code postal</h1>
       <Zip search={search} setSearch={setSearch} makeSearch={makeSearch} />
       <City repos={repos} />
     </div>

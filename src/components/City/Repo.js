@@ -1,10 +1,12 @@
 import React from 'react'
 import PropTypes from 'prop-types';
 
+import '../City/repo.scss';
+
 function Repo({ nom, codeDepartement }) {
     return (
-        <div>
-            <h3>{nom} ({codeDepartement})</h3>
+        <div className="displayCity">
+            <h3 className="nameCity">{nom} ({codeDepartement})</h3>
         </div>
     )
 }
