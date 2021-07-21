@@ -5,7 +5,7 @@ import axios from 'axios';
 import Zip from '../Zip';
 import City from '../City';
 
-import './app.scss';
+import '../App/app.scss';
 
 
 function App() {
@@ -51,7 +51,7 @@ function App() {
 
   return (
     <div className='app'>
-      <h1> Trouver une commune avec son code postal</h1>
+      <h1 className="appTitle"> Trouver une commune avec son code postal</h1>
       <Zip search={search} setSearch={setSearch} makeSearch={makeSearch} />
       <City repos={repos} />
     </div>

@@ -1,0 +1,16 @@
+@use '/src/styles/vars';
+
+.app {
+    background-color: #bb5432;
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+
+.appTitle {
+    size: 1.6rem;
+    font-weight: 500;
+    color: #fff;
+    text-align: center;
+}

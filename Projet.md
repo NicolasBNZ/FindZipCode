@@ -13,6 +13,8 @@ Erreur: Node Sass version 6.0.1 is incompatible with ^4.0.0 || ^5.0.0.
 La version de node n'accepte pas la version de sass. Je désintalle node sass pour mettre une version moins récente.
 https://stackoverflow.com/questions/64625050/error-node-sass-version-5-0-0-is-incompatible-with-4-0-0
 
+Mais j'ai l'impression que sass ne marche pas. Impossible d'appeler les vars depuis les fichiers de style. A suivre.
+
 
 ## ajaxCity
 

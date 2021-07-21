@@ -8,16 +8,15 @@ const Zip = ({ search, setSearch, makeSearch }) => {
 
     return (
         <div className="zipcode">
-            <form
+            <form className="formZip"
                 onSubmit={(event) => {
                     event.preventDefault();
                     makeSearch();
                 }}>
-                <label htmlFor="zipcode" className="enterZip">Entrer un code postal:</label>
                 <input
                     className="spaceZip"
                     type="text"
-                    placeholder="Rechercher..."
+                    placeholder="Entrer un code postal"
                     id="zipcode"
                     name="zipcode"
                     value={search}

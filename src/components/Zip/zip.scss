@@ -1,4 +1,20 @@
-h2 {
-    text-align: center;
-    background-color: red;
+.zipcode {
+    background-color: #fff;
+    display:flex;
+    justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
+
+
+.formZip{
+    size: 2rem;
+}
+
+.spaceZip {
+    size: 1.6rem;
+    font-weight: 500;
+    color: #bb5432;
+}
+
+

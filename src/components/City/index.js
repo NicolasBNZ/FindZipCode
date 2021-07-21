@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 import Repo from '../City/Repo';
 
-import './city.scss';
+import '../City/city.scss';
 
 
 function City({ repos }) {
