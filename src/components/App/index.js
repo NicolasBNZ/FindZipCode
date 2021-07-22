@@ -1,5 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+// import { Dimmer, Loader } from 'semantic-ui-react';
+
+
+// CSS for semantic-ui-react composants
+import 'semantic-ui-css/semantic.min.css';
 
 // Composants import
 import Zip from '../Zip';

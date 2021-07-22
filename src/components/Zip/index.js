@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { Input, Button } from 'semantic-ui-react';
 
 import './zip.scss';
 
@@ -14,8 +15,8 @@ const Zip = ({ search, setSearch, makeSearch }) => {
                     makeSearch();
                 }}>
                 <div className="inputZip">
-                    <input
-                        className="spaceZip"
+                    <Input
+                        className="ui big icon input"
                         type="text"
                         placeholder="Entrer un code postal"
                         id="zipcode"
@@ -24,8 +25,8 @@ const Zip = ({ search, setSearch, makeSearch }) => {
                         onChange={(event) => {
                             setSearch(event.target.value);
                         }}
-                    ></input>
-                    <input type="submit" value="Valider"></input>
+                    ></Input>
+                    <Button className="ui button">Valider</Button>
                 </div>
 
             </form>

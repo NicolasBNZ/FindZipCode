@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 import '../City/repo.scss';
 
-function Repo({ nom, codeDepartement }) {
+function Repo({ nom }) {
     return (
         <div className="displayCity">
             <h3 className="nameCity">{nom}</h3>
