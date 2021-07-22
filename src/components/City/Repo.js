@@ -6,7 +6,7 @@ import '../City/repo.scss';
 function Repo({ nom, codeDepartement }) {
     return (
         <div className="displayCity">
-            <h3 className="nameCity">{nom} ({codeDepartement})</h3>
+            <h3 className="nameCity">{nom}</h3>
         </div>
     )
 }
